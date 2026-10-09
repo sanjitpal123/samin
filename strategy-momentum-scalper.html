@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum Scalper & Market Structure | TRADELAB</title>
+    <meta name="description" content="Institutional order block, liquidity sweep, and price action scalp strategy with rapid execution rules." />
+    <meta name="theme-color" content="#0B0F17" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles/theme.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+  </head>
+  <body class="bg-primary text-main font-sans antialiased overflow-x-hidden selection-neon">
+    <div class="cyber-grid-overlay" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-top" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-mid" aria-hidden="true"></div>
+    <canvas id="trading-matrix-canvas" class="matrix-canvas" aria-hidden="true"></canvas>
+
+    <div id="app">
+      <header id="site-header" class="site-header"></header>
+
+      <!-- Breadcrumbs -->
+      <div class="container" style="padding-top: 24px; padding-bottom: 0;">
+        <nav aria-label="Breadcrumb" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+          <a href="index.html" style="color: var(--text-secondary); transition: color 0.2s;">Home</a>
+          <span>/</span>
+          <a href="strategies.html" style="color: var(--text-secondary); transition: color 0.2s;">Strategies</a>
+          <span>/</span>
+          <span style="color: var(--neon-green); font-weight: 600;">Momentum Scalper</span>
+        </nav>
+      </div>
+
+      <main id="main-content">
+        <!-- Hero Header -->
+        <section class="hero-section" style="padding-top: 32px; padding-bottom: 40px;">
+          <div class="container">
+            <span class="tag-badge" style="margin-bottom: 12px; display: inline-flex;">
+              <span class="tag-dot"></span> STRATEGY SPECIFICATION • INSTITUTIONAL LIQUIDITY
+            </span>
+            <h1 class="heading-xl">Momentum Scalper & Structure</h1>
+            <p class="text-lead" style="max-width: 760px; color: var(--text-secondary); margin-top: 12px;">
+              Designed for active scalp traders navigating short-term liquidity sweeps, Fair Value Gaps (FVG), and order block retests on lower timeframes.
+            </p>
+            
+            <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
+              <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 12px 18px; border-radius: 8px; font-family: var(--font-mono); font-size: 0.85rem;">
+                <span style="color: var(--text-muted);">Ideal Timeframe:</span> <strong style="color: var(--neon-green);">5M / 15M</strong>
+              </div>
+              <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 12px 18px; border-radius: 8px; font-family: var(--font-mono); font-size: 0.85rem;">
+                <span style="color: var(--text-muted);">Risk Profile:</span> <strong style="color: #00E5FF;">0.5% - 1.0% Per Trade</strong>
+              </div>
+              <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 12px 18px; border-radius: 8px; font-family: var(--font-mono); font-size: 0.85rem;">
+                <span style="color: var(--text-muted);">Target R:R:</span> <strong style="color: #38E879;">1 : 2.5 Average</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical Analysis Panel -->
+        <section id="market-analysis" class="analysis-section"></section>
+
+        <!-- 4-Step Execution Flow -->
+        <section id="trading-process" class="process-section"></section>
+
+        <!-- Pricing / Access Plans -->
+        <section id="pricing" class="pricing-section"></section>
+
+        <!-- Risk Disclaimer -->
+        <section id="risk-disclaimer" class="disclaimer-section"></section>
+      </main>
+
+      <footer id="site-footer" class="site-footer"></footer>
+    </div>
+
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+    <script type="module" src="/src/pages/strategy-momentum-scalper.js"></script>
+  </body>
+</html>

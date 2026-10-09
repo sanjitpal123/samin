@@ -1,0 +1,80 @@
+:root {
+  /* ==================================================
+     TRADELAB DESIGN SYSTEM (INSTITUTIONAL LUXURY GOLD)
+     ================================================== */
+  --bg-primary: #0B0F19;
+  --bg-primary-dark: #070A10;
+  --bg-secondary: #111927;
+  --bg-card: #1A2332;
+  --bg-card-hover: #222D3F;
+  --bg-card-inner: #121A26;
+  --bg-glass: rgba(26, 35, 50, 0.75);
+  --bg-glass-heavy: rgba(11, 15, 25, 0.92);
+  
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-light: rgba(255, 255, 255, 0.14);
+  --border-card-highlight: rgba(255, 255, 255, 0.2);
+  --border-neon: rgba(245, 158, 11, 0.35);
+  --border-neon-strong: #F59E0B;
+  --border-cyan: rgba(245, 158, 11, 0.35);
+  
+  /* Luxury Gold Accent System */
+  --neon-green: #F59E0B;
+  --neon-green-hover: #D97706;
+  --neon-green-glow: transparent;
+  --neon-green-subtle: rgba(245, 158, 11, 0.08);
+  --neon-green-text: #0B0F19;
+  
+  --neon-cyan: #F59E0B;
+  --neon-cyan-glow: transparent;
+  --neon-cyan-subtle: rgba(245, 158, 11, 0.08);
+  
+  --neon-emerald: #F59E0B;
+  --neon-purple: #9333EA;
+  
+  /* Chart Colors */
+  --chart-blue: #3B82F6;
+  --chart-green: #F59E0B;
+  --chart-red: #FF3B69;
+  --chart-cyan: #F59E0B;
+  
+  /* Typography Colors */
+  --text-main: #FFFFFF;
+  --text-secondary: #A3B3C9;
+  --text-muted: #64748B;
+  --text-dim: #475569;
+  
+  /* Gradients */
+  --gradient-text-hero: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 60%, #F59E0B 100%);
+  --gradient-neon: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  --gradient-cyan-blue: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  --gradient-card-top: linear-gradient(180deg, rgba(245, 158, 11, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+  --gradient-glow-radial: transparent;
+  
+  /* Layout Spacing */
+  --container-max-width: 90%;
+  --container-padding: 24px;
+  --header-height: 84px;
+  
+  /* Border Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  
+  /* Flat Matte Style - All Shadows Removed */
+  --shadow-card: none;
+  --shadow-card-hover: none;
+  --shadow-neon: none;
+  --shadow-neon-hover: none;
+  --shadow-cyan-glow: none;
+  
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}

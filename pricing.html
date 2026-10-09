@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Plans & Funded Account Models | TRADELAB</title>
+    <meta name="description" content="Explore TRADELAB strategy plans, funded account challenges, risk models, and transparent pricing packages." />
+    <meta name="theme-color" content="#0B0F17" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles/theme.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+  </head>
+  <body class="bg-primary text-main font-sans antialiased overflow-x-hidden selection-neon">
+    <div class="cyber-grid-overlay" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-top" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-mid" aria-hidden="true"></div>
+    <canvas id="trading-matrix-canvas" class="matrix-canvas" aria-hidden="true"></canvas>
+
+    <div id="app">
+      <header id="site-header" class="site-header"></header>
+
+      <!-- Breadcrumbs -->
+      <div class="container" style="padding-top: 24px; padding-bottom: 0;">
+        <nav aria-label="Breadcrumb" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+          <a href="index.html" style="color: var(--text-secondary); transition: color 0.2s;">Home</a>
+          <span>/</span>
+          <span style="color: var(--neon-green); font-weight: 600;">Pricing & Plans</span>
+        </nav>
+      </div>
+
+      <main id="main-content">
+        <!-- Hero Header -->
+        <section class="hero-section" style="padding-top: 32px; padding-bottom: 40px;">
+          <div class="container">
+            <span class="tag-badge" style="margin-bottom: 12px; display: inline-flex;">
+              <span class="tag-dot"></span> TRANSPARENT PRICING & FUNDING
+            </span>
+            <h1 class="heading-xl">Strategy Plans & Funded Accounts</h1>
+            <p class="text-lead" style="max-width: 720px; color: var(--text-secondary); margin-top: 12px;">
+              Choose the strategy access plan that fits your trading goals or test-drive our interactive funded account challenge pricing calculator.
+            </p>
+          </div>
+        </section>
+
+        <!-- Funded Account Pricing Interactive Flip Card Calculator -->
+        <section id="account-pricing" class="tdfy-pricing-section-v2"></section>
+
+        <!-- Pricing Tiers -->
+        <section id="pricing" class="pricing-section"></section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq-section"></section>
+
+        <!-- Risk Disclaimer -->
+        <section id="risk-disclaimer" class="disclaimer-section"></section>
+      </main>
+
+      <footer id="site-footer" class="site-footer"></footer>
+    </div>
+
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+    <script type="module" src="/src/pages/pricing.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trader Community & Leaderboard | TRADELAB</title>
+    <meta name="description" content="Join 185k+ traders worldwide. View real-time trader leaderboards, Creator League rankings, and disciplined trading community." />
+    <meta name="theme-color" content="#0B0F17" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles/theme.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+  </head>
+  <body class="bg-primary text-main font-sans antialiased overflow-x-hidden selection-neon">
+    <div class="cyber-grid-overlay" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-top" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-mid" aria-hidden="true"></div>
+    <canvas id="trading-matrix-canvas" class="matrix-canvas" aria-hidden="true"></canvas>
+
+    <div id="app">
+      <header id="site-header" class="site-header"></header>
+
+      <!-- Breadcrumbs -->
+      <div class="container" style="padding-top: 24px; padding-bottom: 0;">
+        <nav aria-label="Breadcrumb" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+          <a href="index.html" style="color: var(--text-secondary); transition: color 0.2s;">Home</a>
+          <span>/</span>
+          <span style="color: var(--neon-green); font-weight: 600;">Trader Community</span>
+        </nav>
+      </div>
+
+      <main id="main-content">
+        <!-- Hero Header -->
+        <section class="hero-section" style="padding-top: 32px; padding-bottom: 40px;">
+          <div class="container">
+            <span class="tag-badge" style="margin-bottom: 12px; display: inline-flex;">
+              <span class="tag-dot"></span> GLOBAL TRADER NETWORK
+            </span>
+            <h1 class="heading-xl">Trader Community & Rankings</h1>
+            <p class="text-lead" style="max-width: 720px; color: var(--text-secondary); margin-top: 12px;">
+              Connect with over 185,000 disciplined traders worldwide, compare performance metrics on the public leaderboard, and participate in trading leagues.
+            </p>
+          </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="community-section"></section>
+
+        <!-- Trader Leaderboard (Open 1, Open 2, Creator League) -->
+        <section id="leaderboard" class="ptl-leader-sec-main"></section>
+
+        <!-- Risk Disclaimer -->
+        <section id="risk-disclaimer" class="disclaimer-section"></section>
+      </main>
+
+      <footer id="site-footer" class="site-footer"></footer>
+    </div>
+
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+    <script type="module" src="/src/pages/community.js"></script>
+  </body>
+</html>

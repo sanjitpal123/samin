@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trend Following Master Strategy | TRADELAB</title>
+    <meta name="description" content="Multi-timeframe trend alignment, moving average confluence, pullback entries, and trailing stop loss trade management framework." />
+    <meta name="theme-color" content="#0B0F17" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles/theme.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+  </head>
+  <body class="bg-primary text-main font-sans antialiased overflow-x-hidden selection-neon">
+    <div class="cyber-grid-overlay" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-top" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-mid" aria-hidden="true"></div>
+    <canvas id="trading-matrix-canvas" class="matrix-canvas" aria-hidden="true"></canvas>
+
+    <div id="app">
+      <header id="site-header" class="site-header"></header>
+
+      <!-- Breadcrumbs -->
+      <div class="container" style="padding-top: 24px; padding-bottom: 0;">
+        <nav aria-label="Breadcrumb" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+          <a href="index.html" style="color: var(--text-secondary); transition: color 0.2s;">Home</a>
+          <span>/</span>
+          <a href="strategies.html" style="color: var(--text-secondary); transition: color 0.2s;">Strategies</a>
+          <span>/</span>
+          <span style="color: var(--neon-green); font-weight: 600;">Trend Following Master</span>
+        </nav>
+      </div>
+
+      <main id="main-content">
+        <!-- Hero Header -->
+        <section class="hero-section" style="padding-top: 32px; padding-bottom: 40px;">
+          <div class="container">
+            <span class="tag-badge" style="margin-bottom: 12px; display: inline-flex;">
+              <span class="tag-dot"></span> STRATEGY SPECIFICATION • DIRECTIONAL MOMENTUM
+            </span>
+            <h1 class="heading-xl">Trend Following Master</h1>
+            <p class="text-lead" style="max-width: 760px; color: var(--text-secondary); margin-top: 12px;">
+              Systematic trend trading model combining Daily macro trend identification, 4H EMA pullback triggers, and dynamic ATR trailing stop-loss management.
+            </p>
+            
+            <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
+              <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 12px 18px; border-radius: 8px; font-family: var(--font-mono); font-size: 0.85rem;">
+                <span style="color: var(--text-muted);">Ideal Timeframe:</span> <strong style="color: var(--neon-green);">4H / 1D</strong>
+              </div>
+              <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 12px 18px; border-radius: 8px; font-family: var(--font-mono); font-size: 0.85rem;">
+                <span style="color: var(--text-muted);">Risk Profile:</span> <strong style="color: #00E5FF;">1.0% Fixed Risk</strong>
+              </div>
+              <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 12px 18px; border-radius: 8px; font-family: var(--font-mono); font-size: 0.85rem;">
+                <span style="color: var(--text-muted);">Target R:R:</span> <strong style="color: #38E879;">1 : 2.8 - 1 : 4.5</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Strategy Product Showcase -->
+        <section id="premium-strategy" class="premium-product-section"></section>
+
+        <!-- 4-Step Process -->
+        <section id="trading-process" class="process-section"></section>
+
+        <!-- Pricing / Access Plans -->
+        <section id="pricing" class="pricing-section"></section>
+
+        <!-- Risk Disclaimer -->
+        <section id="risk-disclaimer" class="disclaimer-section"></section>
+      </main>
+
+      <footer id="site-footer" class="site-footer"></footer>
+    </div>
+
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+    <script type="module" src="/src/pages/strategy-trend-master.js"></script>
+  </body>
+</html>
